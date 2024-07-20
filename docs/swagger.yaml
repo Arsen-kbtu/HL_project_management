@@ -4,12 +4,16 @@ definitions:
       description:
         type: string
       endDate:
+        example: "2024-09-20T15:04:05Z"
         type: string
       id:
+        readOnly: true
         type: integer
       managerId:
+        example: 1
         type: integer
       startDate:
+        readOnly: true
         type: string
       title:
         type: string
@@ -20,14 +24,18 @@ definitions:
   model.Task:
     properties:
       assigneeId:
+        example: 1
         type: integer
       completedAt:
+        example: "2024-09-20T15:04:05Z"
         type: string
       createdAt:
+        readOnly: true
         type: string
       description:
         type: string
       id:
+        readOnly: true
         type: integer
       priority:
         enum:
@@ -36,6 +44,7 @@ definitions:
         - high
         type: string
       projectId:
+        example: 1
         type: integer
       status:
         type: string
@@ -53,10 +62,12 @@ definitions:
         example: string@gmail.com
         type: string
       id:
+        readOnly: true
         type: integer
       name:
         type: string
       registrationAt:
+        readOnly: true
         type: string
       role:
         type: string

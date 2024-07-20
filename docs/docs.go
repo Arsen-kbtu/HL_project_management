@@ -913,16 +913,20 @@ const docTemplate = `{
                     "type": "string"
                 },
                 "endDate": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "2024-09-20T15:04:05Z"
                 },
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "managerId": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1
                 },
                 "startDate": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "title": {
                     "type": "string"
@@ -939,19 +943,23 @@ const docTemplate = `{
             ],
             "properties": {
                 "assigneeId": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1
                 },
                 "completedAt": {
-                    "type": "string"
+                    "type": "string",
+                    "example": "2024-09-20T15:04:05Z"
                 },
                 "createdAt": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "description": {
                     "type": "string"
                 },
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "priority": {
                     "type": "string",
@@ -962,7 +970,8 @@ const docTemplate = `{
                     ]
                 },
                 "projectId": {
-                    "type": "integer"
+                    "type": "integer",
+                    "example": 1
                 },
                 "status": {
                     "type": "string"
@@ -985,13 +994,15 @@ const docTemplate = `{
                     "example": "string@gmail.com"
                 },
                 "id": {
-                    "type": "integer"
+                    "type": "integer",
+                    "readOnly": true
                 },
                 "name": {
                     "type": "string"
                 },
                 "registrationAt": {
-                    "type": "string"
+                    "type": "string",
+                    "readOnly": true
                 },
                 "role": {
                     "type": "string"
