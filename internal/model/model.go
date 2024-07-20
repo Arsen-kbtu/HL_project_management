@@ -11,7 +11,7 @@ type User struct {
 }
 
 type Task struct {
-	ID          int       `json:"id" readOnly:"true`
+	ID          int       `json:"id" readOnly:"true"`
 	Title       string    `json:"title" validate:"required"`
 	Description string    `json:"description"`
 	Priority    string    `json:"priority"  validate:"required,oneof=low medium high"`
@@ -23,10 +23,10 @@ type Task struct {
 }
 
 type Project struct {
-	ID          int       `json:"id" readOnly:"true`
+	ID          int       `json:"id" readOnly:"true"`
 	Title       string    `json:"title" validate:"required"`
 	Description string    `json:"description"`
-	StartDate   time.Time `json:"startDate" readOnly:"true`
+	StartDate   time.Time `json:"startDate" readOnly:"true"`
 	EndDate     time.Time `json:"endDate"`
 	ManagerID   int       `json:"managerId" validate:"required"`
 }

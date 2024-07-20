@@ -68,6 +68,19 @@ definitions:
 info:
   contact: {}
 paths:
+  /health:
+    get:
+      description: Health check
+      produces:
+      - text/plain
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Health check
+      tags:
+      - health
   /projects:
     get:
       description: Get all projects
